@@ -22,23 +22,16 @@ $path = $_GET['path'] ?? null;
 <body class="bg-gray-100 min-h-screen">
     
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-red-600 mb-4   text-center" > More Sell More Profit</h1>
-        <a href="logout.php" class="bg-red-300 text-white px-4 py-2 rounded hover:bg-red-600">Logout</a>
-    </nav>
+<?php include './includes/navbar.php' ?>
 
     <div class="flex">
-        <!-- Sidebar -->
-        <aside class="w-1/5 bg-white border-r p-4 space-y-4 min-h-screen">
-            <a href="dashboard.php" class="block font-semibold text-gray-700 hover:text-red-600">Dashboard</a>
-            <a href="add_jersey.php" class="block font-semibold text-gray-700 hover:text-red-600">Add Jersey</a>
-            <a href="manage_orders.php" class="block font-semibold text-gray-700 hover:text-red-600">Manage Orders</a>
-        </aside>
+        
+    <?php include './includes/sidebar.php' ?>
 
         <!-- Main Content -->
-        <main class="w-4/5 p-6">
-            <h2 class="text-xl font-bold text-red-600 mb-4 text-center ">Jersey List</h2>
+         <div class="  bg-white shadow-md rounded-lg p-6 mt-6 w-full mx-4">
+        <main class="">
+            <h2 class="text-xl font-bold text-red-600 mb-4 text-center  mx-4">Jersey List</h2>
 
             <div class="bg-white rounded shadow p-4">
                 <table class="w-full table-auto">
@@ -75,6 +68,6 @@ $path = $_GET['path'] ?? null;
             </div>
         </main>
     </div>
-
+</div>
 </body>
 </html>
